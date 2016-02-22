@@ -33,16 +33,6 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.menuUsuario.comunio.UserMenuActivity"
-            android:label="@string/title_player_menu"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.menuUsuario.comunio.NewsActivity"
-            android:label="@string/title_section1"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
             android:name="com.comunio.grupo8.comunio.MJugadores"
             android:label="@string/title_section6"
             android:theme="@style/AppTheme.NoActionBar" >
