@@ -49,7 +49,7 @@ task push (dependsOn: gitPrepareRelease)<<{
         def grgit = org.ajoberstar.grgit.Grgit.open(dir: '../')
         grgit.add(patterns: ['.'], update: true)
         grgit.commit(message: "compilacionAutomatizada released")
-        grgit.tag.add(name: masterVersion, pointsTo: "compilacionAutomatizada-release")
+        grgit.tag.add(name: 'prueba', pointsTo: "compilacionAutomatizada-release")
         grgit.push()
         grgit.push(tags: true)
 }
