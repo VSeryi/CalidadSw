@@ -33,7 +33,6 @@ task pull  <<{
 task gitPrepareRelease << {
         def grgit = org.ajoberstar.grgit.Grgit.open(dir: '../')
         grgit.checkout(branch: "Dany_gradle", createBranch: false)
-        tasks.replaceVersion.execute(); 
 }
     task replaceVersion << {
         ant.replaceregexp(
@@ -49,8 +48,8 @@ task gitPrepareRelease << {
 task push (dependsOn: gitPrepareRelease)<<{
         def grgit = org.ajoberstar.grgit.Grgit.open(dir: '../')
         grgit.add(patterns: ['.'], update: true)
-        grgit.commit(message: "${masterVersion} released")
-        grgit.tag.add(name: masterVersion, pointsTo: "${masterVersion}-release")
+        grgit.commit(message: "compilacionAutomatizada released")
+        grgit.tag.add(name: masterVersion, pointsTo: "compilacionAutomatizada-release")
         grgit.push()
         grgit.push(tags: true)
 }
