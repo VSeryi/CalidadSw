@@ -25,18 +25,39 @@ task clean(type: Delete) {
 }
 
 
-task prueba  <<{
+task pull  <<{
 	def grgit = org.ajoberstar.grgit.Grgit.open(dir: '../')
         grgit.pull()
-	build
 }
-prueba.doLast{
-	println 'hello from prueba.doLast'
+
+task gitPrepareRelease << {
+        def grgit = org.ajoberstar.grgit.Grgit.open(dir: '../')
+        grgit.checkout(branch: "Dany_gradle", createBranch: false)
+        tasks.replaceVersion.execute(); 
+}
+    task replaceVersion << {
+        ant.replaceregexp(
+        	match: /(version = ')[^']*(')/,
+        	replace: "\\1compilacionAutomatizada\\2",
+		encoding: encoding,
+        	flags: 'g') {
+                	fileset(dir: project.projectDir) {
+                    		include(name: 'build.gradle')
+        		}
+		}
+}
+task push (dependsOn: gitPrepareRelease)<<{
+        def grgit = org.ajoberstar.grgit.Grgit.open(dir: '../')
+        grgit.add(patterns: ['.'], update: true)
+        grgit.commit(message: "${masterVersion} released")
+        grgit.tag.add(name: masterVersion, pointsTo: "${masterVersion}-release")
+        grgit.push()
+        grgit.push(tags: true)
 }
 
 
-task build <<{
+task build (dependsOn: pull)<<{
 	println 'Hello from build'
 }
 
-prueba.doLast.dependsOn(':app:build')
+tasks.getByPath(':app:build').finalizedBy(push)
