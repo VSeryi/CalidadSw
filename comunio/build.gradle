@@ -50,12 +50,10 @@ task push (dependsOn: gitPrepareRelease)<<{
         grgit.add(patterns: ['.'], update: true)
         grgit.commit(message: "compilacionAutomatizada released")
         grgit.push()
-        grgit.push(tags: true)
 }
 
 
 task build (dependsOn: pull)<<{
-	println 'Hello from build'
 }
 
 tasks.getByPath(':app:build').finalizedBy(push)
