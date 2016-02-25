@@ -32,7 +32,7 @@ task pull  <<{
 
 task gitPrepareRelease << {
         def grgit = org.ajoberstar.grgit.Grgit.open(dir: '../')
-        grgit.checkout(branch: "Automatizacion", createBranch: true)
+        grgit.checkout(branch: "Automatizacion", createBranch: false)
 }
     task replaceVersion << {
         ant.replaceregexp(
