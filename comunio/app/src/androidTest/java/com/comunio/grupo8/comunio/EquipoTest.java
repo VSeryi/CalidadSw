@@ -13,7 +13,7 @@ package com.comunio.grupo8.comunio;
         import cucumber.api.java.en.And;
 
 @RunWith(Cucumber.class)
-public class PruebaTest {
+public class EquipoTest {
 
         @Given("^the user has at least 1 player in his team$")
         public void the_user_has_at_least_1_player_in_his_team() throws Throwable {
