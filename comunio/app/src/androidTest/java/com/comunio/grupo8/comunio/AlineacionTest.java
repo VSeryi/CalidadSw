@@ -1,4 +1,5 @@
-package my.package.name
+package com.comunio.grupo8.comunio;
+
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
@@ -9,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-public class MyStepDefinitions {
+public class AlineacionTest {
 
     @Given("^the user has at least 1 player in his team$")
     public void the_user_has_at_least_1_player_in_his_team() throws Throwable {

@@ -1,4 +1,4 @@
-package my.package.name
+package com.comunio.grupo8.comunio;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-public class MyStepDefinitions {
+public class MercadoTest {
 
     @Given("^there is at least 1 Player in the market$")
     public void there_is_at_least_1_player_in_the_market() throws Throwable {

@@ -1,4 +1,4 @@
-package my.package.name
+
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-public class MyStepDefinitions {
+public class ClasificacionTest {
 
     @Given("^There are users in the application$")
     public void there_are_users_in_the_application() throws Throwable {
