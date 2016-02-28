@@ -1,4 +1,4 @@
-
+package com.comunio.grupo8.comunio;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
