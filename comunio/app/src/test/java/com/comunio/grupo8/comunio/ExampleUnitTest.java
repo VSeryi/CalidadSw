@@ -1,4 +1,4 @@
-package com.comunio.grupo8.comunio;
+package es.urjc.etsii.cs.comunio;
 
 import org.junit.Test;
 

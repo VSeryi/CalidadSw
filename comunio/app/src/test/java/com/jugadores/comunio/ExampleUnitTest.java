@@ -1,4 +1,4 @@
-package com.jugadores.comunio;
+package es.urjc.etsii.cs.comunio.players;
 
 import org.junit.Test;
 

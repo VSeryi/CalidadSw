@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.comunio.grupo8.comunio" >
+    package="es.urjc.etsii.cs.comunio" >
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".StartActivity"
+            android:name="es.urjc.etsii.cs.comunio.activities.StartActivity"
             android:screenOrientation="portrait"
             android:launchMode="singleInstance">
             <intent-filter>
@@ -19,49 +19,48 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name="es.urjc.etsii.cs.comunio.activities.RegisterActivity"
             android:label="@string/title_activity_register"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".MenuStartedActivity"
+            android:name="es.urjc.etsii.cs.comunio.activities.MenuStartedActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".UserLoginActivity"
+            android:name="es.urjc.etsii.cs.comunio.activities.UserLoginActivity"
             android:label="@string/title_activity_user_login"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.comunio.grupo8.comunio.MJugadores"
+            android:name=".activities.PlayersActivity"
             android:label="@string/title_section6"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name="com.comunio.grupo8.comunio.MNews"
+            android:name=".activities.NewsActivity"
             android:label="@string/title_section1"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name="com.comunio.grupo8.comunio.MClasificacion"
+            android:name=".activities.LeaderboardActivity"
             android:label="@string/title_section5"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name="com.comunio.grupo8.comunio.MMercado"
+            android:name=".activities.MarketActivity"
             android:label="@string/title_section4"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name="com.comunio.grupo8.comunio.MAlineacion"
+            android:name=".activities.LineupsActivity"
             android:label="@string/title_section3"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name="com.comunio.grupo8.comunio.MEquipo"
+            android:name=".activities.TeamActivity"
             android:label="@string/title_section7"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
-
 </manifest>
