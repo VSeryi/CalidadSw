@@ -1,14 +1,13 @@
-package es.urjc.etsii.cs.comunio.activities;
+/*
+package es.urjc.etsii.cs.comunio.cucumber.steps;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.And;
-import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
-@RunWith(Cucumber.class)
 public class MercadoTest {
 
     @Given("^there is at least 1 Player in the market$")
@@ -66,4 +65,4 @@ public class MercadoTest {
         throw new PendingException();
     }
 
-}
+}*/

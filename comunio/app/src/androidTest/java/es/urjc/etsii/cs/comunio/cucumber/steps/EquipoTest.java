@@ -1,18 +1,19 @@
-package es.urjc.etsii.cs.comunio.activities;
+/*
+package es.urjc.etsii.cs.comunio.cucumber.steps;
 
+*/
 /**
  * Created by sobremesa on 27/02/16.
- */
+ *//*
+
 
         import org.junit.runner.RunWith;
-        import cucumber.api.junit.Cucumber;
         import cucumber.api.PendingException;
         import cucumber.api.java.en.Given;
         import cucumber.api.java.en.When;
         import cucumber.api.java.en.Then;
         import cucumber.api.java.en.And;
 
-@RunWith(Cucumber.class)
 public class EquipoTest {
 
         @Given("^the user has at least 1 player in his team$")
@@ -80,4 +81,4 @@ public class EquipoTest {
                 throw new PendingException();
         }
 
-}
+}*/

@@ -1,11 +1,12 @@
-package es.urjc.etsii.cs.comunio.activities;
+/*
+package es.urjc.etsii.cs.comunio.cucumber.steps;
 
+*/
 /**
  * Created by sobremesa on 27/02/16.
- */
+ *//*
 
-    import org.junit.runner.RunWith;
-    import cucumber.api.junit.Cucumber;
+
     import cucumber.api.PendingException;
     import cucumber.api.java.en.Given;
     import cucumber.api.java.en.When;
@@ -13,7 +14,6 @@ package es.urjc.etsii.cs.comunio.activities;
     import cucumber.api.java.en.And;
 
 
-@RunWith(Cucumber.class)
 public class NoticiasTest {
     @Given("^There are 0 events$")
     public void there_are_0_events() throws Throwable {
@@ -67,3 +67,4 @@ public class NoticiasTest {
 
 
 }
+*/
