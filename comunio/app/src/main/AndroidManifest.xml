@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.comunio.grupo8.comunio" >
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
