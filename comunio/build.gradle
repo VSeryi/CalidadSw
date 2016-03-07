@@ -58,3 +58,4 @@ task build (dependsOn: pull)<<{
 }
 
 tasks.getByPath(':app:build').finalizedBy(push)
+
