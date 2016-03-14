@@ -2,7 +2,7 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "line": 1,
   "name": "Team View",
-  "description": "The user can view the players that are in his Team\r\nIf the user clicks on a player he can sell them",
+  "description": "The user can view the players that are in his Team\nIf the user clicks on a player he can sell them",
   "id": "team-view",
   "keyword": "Feature"
 });
@@ -33,15 +33,15 @@ formatter.match({
   "location": "EquipoTest.the_user_has_1_or_more_players_in_the_team()"
 });
 formatter.result({
-  "duration": 119159407,
+  "duration": 130918276,
   "status": "passed"
 });
 formatter.match({
   "location": "EquipoTest.the_user_enters_the_team_view()"
 });
 formatter.result({
-  "duration": 2376489,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.comunio.grupo8.comunio.EquipoTest.the_user_enters_the_team_view(EquipoTest.java:31)\r\n\tat ✽.When the user enters the team view(Equipo.feature:7)\r\n",
+  "duration": 2094992,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat com.comunio.grupo8.comunio.EquipoTest.the_user_enters_the_team_view(EquipoTest.java:31)\n\tat ✽.When the user enters the team view(Equipo.feature:7)\n",
   "status": "pending"
 });
 formatter.match({
@@ -77,8 +77,8 @@ formatter.match({
   "location": "EquipoTest.the_user_has_0_players_in_the_team()"
 });
 formatter.result({
-  "duration": 365361,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.comunio.grupo8.comunio.EquipoTest.the_user_has_0_players_in_the_team(EquipoTest.java:26)\r\n\tat ✽.Given the user has 0 players in the team(Equipo.feature:11)\r\n",
+  "duration": 235471,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat com.comunio.grupo8.comunio.EquipoTest.the_user_has_0_players_in_the_team(EquipoTest.java:26)\n\tat ✽.Given the user has 0 players in the team(Equipo.feature:11)\n",
   "status": "pending"
 });
 formatter.match({
@@ -125,15 +125,15 @@ formatter.match({
   "location": "EquipoTest.the_user_has_1_or_more_players_in_the_team()"
 });
 formatter.result({
-  "duration": 63630,
+  "duration": 57630,
   "status": "passed"
 });
 formatter.match({
   "location": "EquipoTest.the_user_presses_on_a_player()"
 });
 formatter.result({
-  "duration": 354688,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.comunio.grupo8.comunio.EquipoTest.the_user_presses_on_a_player(EquipoTest.java:36)\r\n\tat ✽.When the user presses on a player(Equipo.feature:17)\r\n",
+  "duration": 355568,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat com.comunio.grupo8.comunio.EquipoTest.the_user_presses_on_a_player(EquipoTest.java:36)\n\tat ✽.When the user presses on a player(Equipo.feature:17)\n",
   "status": "pending"
 });
 formatter.match({
