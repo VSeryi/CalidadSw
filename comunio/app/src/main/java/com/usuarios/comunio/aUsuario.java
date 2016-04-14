@@ -1,6 +1,7 @@
 package com.usuarios.comunio;
 
 import com.jugadores.comunio.ListaJugadores;
+import com.jugadores.comunio.aJugadores;
 
 import java.io.Serializable;
 
@@ -11,10 +12,12 @@ public abstract class aUsuario implements Serializable {
     private ListaJugadores lista;
     private String nick;
     private String password;
+    private double dinero;
 
     public aUsuario(String nick){
         lista=new ListaJugadores();
         this.nick=nick;
+        this.dinero = 0;
     }
 
     @Override
@@ -42,7 +45,22 @@ public abstract class aUsuario implements Serializable {
         return password;
     }
 
-    public void setPassword(String password) {
+    public void changePassword(String password) {
         this.password = password;
+    }
+
+    public double getDinero() {
+        return dinero;
+    }
+
+    public void setDinero(double dinero) {
+        this.dinero = dinero;
+    }
+
+    public void fichar(aJugadores player) {
+        if (this.dinero >= player.getValor()) {
+            this.getLista().add(player);
+            this.dinero = this.dinero - player.getValor();
+        }
     }
 }

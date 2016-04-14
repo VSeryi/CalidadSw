@@ -8,7 +8,7 @@ import java.io.Serializable;
 public class Usuario extends aUsuario implements Serializable{
     public Usuario (String nick , String pass){
         super (nick);
-        this.setPassword(pass);
+        this.changePassword(pass);
     }
 
     @Override

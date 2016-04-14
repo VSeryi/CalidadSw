@@ -96,6 +96,16 @@ public class ListaJugadores {
         return jugadores.remove(object);
     }
 
+    public aJugadores get(String name) {
+        for (aJugadores jug:this.getJugadores()
+             ) {
+            if(jug.getName().equals(name)){
+                return jug;
+            }
+        }
+        return null;
+    }
+
     public ListIterator<aJugadores> listIterator() {
         return jugadores.listIterator();
     }
