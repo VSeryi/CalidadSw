@@ -13,7 +13,7 @@ package com.comunio.grupo8.comunio;
     import cucumber.api.java.en.And;
 
 
-@RunWith(Cucumber.class)
+
 public class NoticiasTest {
     @Given("^There are 0 events$")
     public void there_are_0_events() throws Throwable {

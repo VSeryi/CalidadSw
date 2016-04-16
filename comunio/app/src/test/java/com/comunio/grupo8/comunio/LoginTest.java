@@ -10,7 +10,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.And;
 
 
-@RunWith(Cucumber.class)
+
 public class LoginTest {
     @Given("^The username and password combination exists$")
     public void the_username_and_password_combination_exists() throws Throwable {
