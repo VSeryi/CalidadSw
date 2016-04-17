@@ -54,7 +54,7 @@ public class StartActivity extends AppCompatActivity {
         Button buttonRegister = (Button) findViewById(R.id.button_register);
         Button buttonLogin = (Button) findViewById(R.id.button_login);
 
-        Usuario user = new Usuario("Dany", "1234");
+        Usuario user = new Usuario("admin", "1234");
         listU.add(user);
         ListaJugadores merc=new ListaJugadores();
         ListaJugadores jugadores=new ListaJugadores();
