@@ -75,10 +75,10 @@ public class UserTest {
         assertEquals(user.getLista().contains(jug),true);
     }
 
-    @Then("^the player with name 'Karim Benzema' and value '100000' from the team 'Real Madrid' should not be in the user's team$")
+    @Then("^the player with name '(.+)' and value '(\\d+)' from the team '(.+)' should not be in the user's team$")
     public void the_player_with_name_karim_benzema_and_value_100000_from_the_team_real_madrid_should_not_be_in_the_users_team(final String name,final int value,final String team) throws Throwable {
         aJugadores jug = new Delantero(name,team,value);
-        assertEquals(user.getLista().contains(jug),true);
+        assertEquals(user.getLista().contains(jug),false);
     }
 
     @Then("^the player with name '(.+)' and value '(\\d+)' from the team '(.+)' shouldn't be in the user's team$")
